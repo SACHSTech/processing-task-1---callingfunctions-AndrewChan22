@@ -90,7 +90,7 @@ public class Sketch extends PApplet {
     rect(350, 500, 100, 150);
 
     //draw door knob
-    fill(70,71,77);
+    fill(70, 71, 77);
     ellipse(375, 565, 15, 15);
 
     noStroke();
