@@ -1,3 +1,15 @@
+/*
+-------------------------------------------------------------------------
+Name:		Sketch.java
+
+Purpose: 5.2 Processing Task 1 - Calling Functions
+
+Author:	Chan. A
+
+Created:	date in 02/22/2022
+-------------------------------------------------------------------------
+*/
+
 import processing.core.PApplet;
 
 public class Sketch extends PApplet {
@@ -26,12 +38,11 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
+    //draw ground
 
     noStroke();
 
-    //rect draws from top left corner, ellipse draws from centre
-    //draw ground level
-    fill(113,81,55);
+    fill(113, 81, 55);
     rect(0, 650, 800, 200);
     grass(0, 650);
     grass(200, 650);
@@ -39,57 +50,60 @@ public class Sketch extends PApplet {
     grass(600, 650);
     grass(750, 650);
 
-    fill(147,192,97);
-    rect(0,650,800,45);
+    fill(147, 192, 97);
+    rect(0, 650, 800, 45);
 
-    //tree trunk
-    fill(92,72,42);
-    rect(600,350,80,300);
 
-    wood(650,350);
+    stroke(0, 0, 0);
+    strokeWeight(1);
 
-    wood(605,450);
-
-    wood(655,500);
-
-    wood(640, 550);
-
-    wood(660, 600);
-
-    //sun 
+    //draw sun 
     fill(255, 255, 35);
-    ellipse(100,100,75,75);
+    ellipse(100, 100, 75, 75);
 
-    //leaves
+    line(138, 100, 185, 100);
+    line(100, 138, 100, 185);
 
-    fill(41,110,11);
+    line(127, 127, 160, 160);
 
-    ellipse(640,250,300,300);
+    //draw house
+    fill(168, 97, 87);
+    rect(225, 325, 350, 325);
 
-    //additional leaves
+    //draw roof
+    fill(124, 117, 110);
+    triangle(400, 175, 165, 325, 635, 325);
 
+    //draw left window
+    fill(122, 184, 221);
+    ellipse(313, 420, 50, 75);
+    line(288, 420, 338, 420);
+    line(313, 383, 313, 457);
 
-    ellipse(640,250,300,300);
+    //draw right window
+    ellipse(488, 420, 50, 75);
+    line(464, 420, 513, 420);
+    line(488, 383, 488, 456);
 
+    //draw door
+    fill(123, 68, 29);
+    rect(350, 500, 100, 150);
 
-    triangle(650,240,550,140,450,260);
+    //draw door knob
+    fill(70,71,77);
+    ellipse(375, 565, 15, 15);
 
-    ellipse(590,350,200,100);
+    noStroke();
 
+    //draw clouds
+    fill(255, 255, 255);
+    ellipse(300, 50, 100, 50);
+    ellipse(350, 70, 100, 50);
 
+    ellipse(550, 50, 100, 50);
+    ellipse(600, 70, 100, 50);
+    ellipse(630, 50, 100, 50);
 
-    ellipse(600,150,150,50);
-
-    ellipse(570,234,150,50);
-
-
-
-
-
-    
-
-  
-    
 
 
   }
@@ -100,17 +114,10 @@ public class Sketch extends PApplet {
   public void grass(float x, float y) {
 
 
-    fill(147,192,97);
+    fill(147, 192, 97);
     rect(x, y, 50, 75);
   
     }
-
-  public void wood(float x, float y) {
-
-    fill(115, 90, 53);
-    rect(x, y, 20, 30);
-    
-  }
 
 
   
