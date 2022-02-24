@@ -41,7 +41,7 @@ public class Sketch extends PApplet {
     // draw ground
 
     noStroke();
-    
+
     fill(113, 81, 55);
     rect(0, 650, 800, 200);
     grass(0, 650);
@@ -114,7 +114,7 @@ public class Sketch extends PApplet {
 
   
   /**
-   *  Given two floats, return the x and y coordinates of a rectangle
+   * Given two floats, return the x and y coordinates of a rectangle
    * 
    * @param x The first x coordinate
    * @param y The first y coordinate
